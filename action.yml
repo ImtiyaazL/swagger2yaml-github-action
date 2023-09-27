@@ -1,0 +1,25 @@
+name: 'Swagger2Yaml Action'
+description: 'Converts swagger json to yaml for AWS API Gateway'
+author: 'BankservAfrica-OpenSource'
+inputs:
+  account:
+    description: 'AWS account ID'
+    required: true
+  host:
+    description: 'Cloud host URL'
+    required: true
+  input:
+    description: 'Path to the input Swagger JSON file'
+    required: true
+  output:
+    description: 'Path to the output YAML file'
+    required: true
+  region:
+    description: 'AWS region'
+    required: true
+  vpc:
+    description: 'AWS VPC ID'
+    required: true
+runs:
+  using: docker
+  image: 'Dockerfile'

@@ -1,5 +1,5 @@
 <div align="center">
-<h1 style="text-decoration: underline">Swagger2yaml Github Action</h1>
+<h1 style="text-decoration: underline">Swagger2YAML Github Action</h1>
 <p>
 This GitHub Action converts Swagger JSON to YAML for use with AWS API Gateway configurations.The conversion is mainly based around swagger files generated from <a href="https://github.com/grpc-ecosystem/grpc-gateway">grpc-Gateway</a>.
 </p>
@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Convert Swagger to YAML
-        uses: ImtiyaazL/swagger2yaml-github-action@v1.0.0
+        uses: ImtiyaazL/-github-action@v1.0.0
         with:
           account: ${{ secrets.AWS_ACCOUNT }}
           host: ${{ secrets.CLOUD_HOST }}
